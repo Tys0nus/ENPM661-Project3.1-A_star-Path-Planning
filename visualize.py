@@ -5,10 +5,11 @@ import numpy as np
 import tkinter as tk
 import math
 
+# Taking user input for clearance and robot radius
 clearance = int(input("Please give the clearance for the obstacles:"))
 radius = int(input("Please give the radius of the robot:"))
 
-
+# Function for drawing original triangle
 def triangle(base, height, xc,yc, angle=0):
 
     x1, y1 = xc+height, yc
@@ -18,6 +19,7 @@ def triangle(base, height, xc,yc, angle=0):
     canvas.create_polygon(pts, fill='blue')
     return pts
 
+# Function for drawing inflated triangle to consider clearance and robot radius
 def triangle_inflated(base, height, xc, yc, angle=0, dist=0):
 
     x1, y1 = xc + height + dist, yc
@@ -27,7 +29,7 @@ def triangle_inflated(base, height, xc, yc, angle=0, dist=0):
     canvas.create_polygon(pts, fill='red')
     return pts
 
-
+# Function to draw hexagon
 def polygon_original(sides, length, xc, yc,orient=np.pi/2):
     n = sides
     theta = 2*np.pi/n
@@ -41,6 +43,7 @@ def polygon_original(sides, length, xc, yc,orient=np.pi/2):
     canvas.create_polygon(pts, fill="blue")
     return pts, p
 
+# Function to draw inflated hexagon to consider clearance and robot radius
 def polygon_inflated(sides, length, xc, yc,orient=np.pi/2):
     n = sides
     theta = 2*np.pi/n
