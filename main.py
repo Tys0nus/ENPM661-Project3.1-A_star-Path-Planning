@@ -1,9 +1,9 @@
-import a_star_ankur_aditya as astr
 import visualize as vis
+import a_star_ankur_aditya as astr
 
 if __name__ == "__main__":
     print("-----------------------")
-    print("Path Planning: A star")
+    print("Path Planning: A star") 
     print("-----------------------")
     x, y, th = [int(x) for x in input("Enter the Start Coordinates: ").split()] 
     
@@ -21,6 +21,8 @@ if __name__ == "__main__":
     y = 250 - y
     goal = (x,y, th)
 
-    canvas = vis.main(start,goal)
-    # astr.execute(start,goal)
+    root, canvas = vis.main(start,goal)
+    astr.main(root, canvas, start,goal)
+
+    root.mainloop()
 
