@@ -1,3 +1,6 @@
+# Obstacle Space with Clearance
+# Ankur Chavan and Aditya Chaugule
+
 import numpy as np
 import tkinter as tk
 import math
