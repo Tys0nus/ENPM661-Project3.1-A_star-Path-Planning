@@ -1,5 +1,6 @@
 import numpy as np
 import tkinter as tk
+import math
 
 def triangle(base, height, xc,yc, angle=0):
 
@@ -13,11 +14,13 @@ def triangle(base, height, xc,yc, angle=0):
 def triangle_inflated(base, height, xc, yc, angle=0, clearance=0):
 
     x1, y1 = xc + height + clearance, yc
-    x2, y2 = xc - clearance, yc + base/2 + clearance
-    x3, y3 = xc - clearance, yc - base/2 - clearance
+    x2, y2 = xc - clearance, yc + base/2 + 3*clearance
+    x3, y3 = xc - clearance, yc - base/2 - 3*clearance
     pts = [x1, y1, x2, y2, x3, y3]
     canvas.create_polygon(pts, fill='red')
     return pts
+
+
 
 # def polygon_new(sides, length, xc, yc, orient=np.pi/2, inflate=5):
 #     n = sides
