@@ -3,6 +3,10 @@ A* Algorithm Implementation for Path Planning
 
 This repository contains the implementation of A* algorithm for path planning.
 
+Sim Output:
+
+![](https://github.com/ankurchavan1/ENPM661_Project3_A_star/blob/main/sim/output_git.gif)
+
 How to run the code:
 --------------------
 
