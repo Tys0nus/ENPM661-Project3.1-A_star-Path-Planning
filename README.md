@@ -24,7 +24,7 @@ Repository Link : https://github.com/ankurchavan1/ENPM661_Project3_A_star.git
 Dependencies:
 
 Python 3.10
-Numpy, math, Tkinter, heapq
+Numpy, math, Tkinter, heapq, time
 
 Team Members:
 
