@@ -9,8 +9,8 @@ Run the main.py file to enter the inputs and get the expected results.
 
 When you run the code, it will ask the user input for wall clearance, robot radius, start node coordinates and orientation and goal node coordinates and orientation.
 Give the clearance and radius as input to get an obstacle space.
-Give the start node coordinates and orienation as three consecutives values with spaces.
-Give the goal node coordinates and orienation as three consecutives values with spaces.
+Give the start node coordinates and orienation as three consecutives values with spaces. Sample input: 50 50 0
+Give the goal node coordinates and orienation as three consecutives values with spaces.  Sample input: 200 20 30
 When you run the code, wait for some time, as it will take some time to execute.
 The result will be displayed as animation of finding the goal node and visualizing the optimal path.
 
@@ -20,6 +20,7 @@ Python 3.10
 Numpy, math, Tkinter, heapq
 
 Team Members:
+
 Aditya Chaugule
 Directory ID: aditya97@umd.edu
 UID: 119280539
