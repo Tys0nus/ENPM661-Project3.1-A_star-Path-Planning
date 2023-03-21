@@ -9,9 +9,7 @@ Run the main.py file to enter the inputs and get the expected results.
 
 When you run the code, it will ask the user input for wall clearance, robot radius, start node coordinates and orientation and goal node coordinates and orientation.
 Give the clearance and radius as input to get an obstacle space. 
-Sample Input:
-Clearance: 3
-Radius: 3
+Sample Input: 3 3
 Give the start node coordinates and orienation as three consecutives values with spaces. 
 Sample input: 50 50 0
 Give the goal node coordinates and orienation as three consecutives values with spaces.  
